@@ -12,7 +12,7 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-onboarding"),
     getAbsolutePath("@storybook/addon-interactions"),
-    "@storybook/addon-a11y"
+    "@storybook/addon-a11y",
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
@@ -20,6 +20,13 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: true,
+  },
+  viteFinal: (config, { configType }) => {
+    if (configType === "PRODUCTION") {
+      config.base = "/ignite-call-design-system/"
+    }
+
+    return config
   },
 };
 export default config;
