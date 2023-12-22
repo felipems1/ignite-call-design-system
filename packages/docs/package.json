@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@dev-space-ui/docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,9 +14,9 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
+    "@dev-space-ui/eslint-config": "*",
+    "@dev-space-ui/react": "*",
+    "@dev-space-ui/tokens": "*",
     "@storybook/addon-a11y": "^7.6.6",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
